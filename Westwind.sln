@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{373C2B8B-D99E-4BD8-83AA-F1CB00A18D76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{FA78AA18-ABFC-4FA9-8D7E-9F3FD72D37DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{D5AA724A-89C8-4D22-8D9C-CEEC7C2A892C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "..\..\..\..\opt\git\cloadbackend-master\src\BuildingBlocks\EventBus\EventBus\EventBus.csproj", "{0FC99546-A442-49D9-837C-19A68C357355}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA78AA18-ABFC-4FA9-8D7E-9F3FD72D37DA} = {373C2B8B-D99E-4BD8-83AA-F1CB00A18D76}
+		{D5AA724A-89C8-4D22-8D9C-CEEC7C2A892C} = {FA78AA18-ABFC-4FA9-8D7E-9F3FD72D37DA}
+		{0FC99546-A442-49D9-837C-19A68C357355} = {D5AA724A-89C8-4D22-8D9C-CEEC7C2A892C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FC99546-A442-49D9-837C-19A68C357355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC99546-A442-49D9-837C-19A68C357355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC99546-A442-49D9-837C-19A68C357355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC99546-A442-49D9-837C-19A68C357355}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
