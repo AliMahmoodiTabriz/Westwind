@@ -23,8 +23,8 @@ namespace EventBusRabbitMQ
 {
     public class EventBusRabbitMq : IEventBus, IDisposable
     {
-        const string BROKER_NAME = "teknim_event_bus";
-        const string AUTOFAC_SCOPE_NAME = "teknim_event_bus";
+        const string BROKER_NAME = "westwind_event_bus";
+        const string AUTOFAC_SCOPE_NAME = "westwind_event_bus";
         private readonly ConcurrentQueue<IntegrationEvent> _queue;
         private readonly IRabbitMQPersistentConnection _persistentConnection;
         private readonly ILogger<EventBusRabbitMq> _logger;
