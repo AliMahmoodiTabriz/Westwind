@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 // Add services to the container.
-builder.Services.AddRabbitMQEventBus("172.16.0.207",5672,"stock");
+builder.Services.AddRabbitMQEventBus("127.0.0.1",5672,"stock");
 builder.Services.AddScoped<ProductCountChangeHandler>();
 
 builder.Services.AddControllers();
