@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{D5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "src\BuildingBlocks\EventBus\EventBus\EventBus.csproj", "{37D5E6C2-8196-4FF2-BE91-5F1C84AF68F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusRabbitMQ", "src\BuildingBlocks\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{FCDDADBA-2F38-4B13-93A4-F51C200A00A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 		{FA78AA18-ABFC-4FA9-8D7E-9F3FD72D37DA} = {373C2B8B-D99E-4BD8-83AA-F1CB00A18D76}
 		{D5AA724A-89C8-4D22-8D9C-CEEC7C2A892C} = {FA78AA18-ABFC-4FA9-8D7E-9F3FD72D37DA}
 		{37D5E6C2-8196-4FF2-BE91-5F1C84AF68F4} = {D5AA724A-89C8-4D22-8D9C-CEEC7C2A892C}
+		{FCDDADBA-2F38-4B13-93A4-F51C200A00A8} = {D5AA724A-89C8-4D22-8D9C-CEEC7C2A892C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{37D5E6C2-8196-4FF2-BE91-5F1C84AF68F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37D5E6C2-8196-4FF2-BE91-5F1C84AF68F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37D5E6C2-8196-4FF2-BE91-5F1C84AF68F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37D5E6C2-8196-4FF2-BE91-5F1C84AF68F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCDDADBA-2F38-4B13-93A4-F51C200A00A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDDADBA-2F38-4B13-93A4-F51C200A00A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDDADBA-2F38-4B13-93A4-F51C200A00A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDDADBA-2F38-4B13-93A4-F51C200A00A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
