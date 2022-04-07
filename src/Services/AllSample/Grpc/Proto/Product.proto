@@ -1,0 +1,32 @@
+﻿syntax = "proto3";
+import "google/protobuf/empty.proto";
+package gRPCSample;
+
+service ProductService {
+  rpc SetProductUnaryCount (ProductCount) returns (ProductResponse) {}
+  rpc GetProductUnaryCount (ProductRequest) returns (ProductCount) {}
+  
+  rpc ClientStreamHello(stream Hello) returns (google.protobuf.Empty) {}
+  rpc ServerStreamHello (DurationMessage) returns (stream Hello) {}
+
+  rpc BiDirectionalStreamHello (stream Hello) returns (stream Hello) {}
+}
+
+message ProductCount {
+  int32 Count= 1;
+  string Name=2;
+}
+message ProductRequest {
+  string Name=1;
+}
+message ProductResponse {
+  bool Result=1;
+}
+message DurationMessage {
+  int32 Duration=1;
+}
+
+message Hello
+{
+  string Content=1;
+}

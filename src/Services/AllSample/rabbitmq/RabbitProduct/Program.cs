@@ -6,8 +6,9 @@ using RabbitProduct.Application.RabbitHandlers;
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 // Add services to the container.
-builder.Services.AddRabbitMQEventBus("127.0.0.1",5672,"product");
+builder.Services.AddRabbitMQEventBus("172.16.0.207",5672,"product");
 builder.Services.AddScoped<ProductPriceChangeHandler>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

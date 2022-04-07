@@ -26,5 +26,12 @@ namespace RabbitProduct.Controllers
             _eventBus.Publish(new ProductCountChangeEvent(count));
             return Ok("success");
         }
+        
+        [HttpPost(template: "test")]
+        public async Task<IActionResult> Test(string message)
+        {
+            _eventBus.Publish(new HellowordEvent(message));
+            return Ok("success");
+        }
     }
 }
