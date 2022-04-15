@@ -13,8 +13,8 @@ service ProductService {
 }
 
 message ProductCount {
-  int32 Count= 1;
-  string Name=2;
+  int32 Count = 1;
+  string Name = 2;
 }
 message ProductRequest {
   string Name=1;

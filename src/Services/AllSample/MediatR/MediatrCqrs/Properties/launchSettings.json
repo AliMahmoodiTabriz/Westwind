@@ -1,12 +1,12 @@
 ﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "GrpcClient": {
+    "MediatR": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:4100",
+      "applicationUrl": "http://localhost:6200",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
