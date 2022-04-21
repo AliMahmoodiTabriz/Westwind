@@ -8,6 +8,7 @@ public class ProductPriceChangeHandler : IRequestHandler<ProductPriceChangeComma
     public async Task<Product> Handle(ProductPriceChangeCommand request, CancellationToken cancellationToken)
     {
         Console.WriteLine($"Update Product Id {request.Id} To Database whit price {request.Price}");
+        //save
         return new Product() {Id = request.Id, Name = "Test", Price = request.Price};
     }
 }

@@ -6,6 +6,7 @@ public class ProductCountChangeHandler:INotificationHandler<ProductCountChangeCo
 {
     public async Task Handle(ProductCountChangeCommand notification, CancellationToken cancellationToken)
     {
+        //save
         Console.WriteLine($"Update Product Id {notification.Id} To Database whit count {notification.Count}");
     }
 }

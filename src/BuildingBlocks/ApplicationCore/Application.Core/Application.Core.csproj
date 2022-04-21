@@ -9,6 +9,7 @@
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0-preview.2.22152.2" />
+      <PackageReference Include="StackExchange.Redis" Version="2.5.61" />
     </ItemGroup>
 
     <ItemGroup>
