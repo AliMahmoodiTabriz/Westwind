@@ -27,19 +27,4 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 
-await app.UseRedisCacheListener("");
 app.Run();
-
-
-namespace RedisCache
-{
-    public static class Listener
-    {
-        public static async Task<IApplicationBuilder> UseRedisCacheListener(this IApplicationBuilder app, string prefix)
-        {
-            var listener = app.ApplicationServices.GetRequiredService<CacheEventListener>();
-            await listener.ListenExpiredByPrefix(prefix);
-            return app;
-        }
-    }
-}
